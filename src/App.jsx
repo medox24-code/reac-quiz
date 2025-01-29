@@ -59,7 +59,7 @@ const App = () => {
   if (CurrentQuestion !== -1) {
     if (CurrentQuestion === questions.length - 1) {
       return (
-        <div className="w-[500px] max-w-[90%] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2 justify-content-center">
+        <div className="w-[500px] max-w-[90%] bg-white p-2 rounded-lg shadow-md flex flex-col gap-2 justify-content-center items-center">
           <h1 className='text-center font-bold text-4xl'>Quiz Results</h1>
           <CircularProgressBar percentage={(TotalCorrect*100)/questions.length} size={120} strokeWidth={10}/>
           <p>You have <span className='text-cyan font-bold text-center'>{TotalCorrect}/{questions.length}</span> Correct answers</p>
