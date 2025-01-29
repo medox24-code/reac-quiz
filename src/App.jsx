@@ -20,7 +20,7 @@ const CircularProgressBar = ({ percentage, size, strokeWidth }) => {
           cy={size / 2}
         />
         <circle
-          className="text-blue-500 transition-all duration-300 ease-in-out"
+          className="text-cyan-500 transition-all duration-300 ease-in-out"
           stroke="currentColor"
           strokeWidth={strokeWidth}
           strokeDasharray={circumference}
