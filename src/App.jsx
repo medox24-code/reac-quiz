@@ -63,6 +63,14 @@ const App = () => {
           <h1 className='text-center font-bold text-4xl'>Quiz Results</h1>
           <CircularProgressBar percentage={(TotalCorrect*100)/questions.length} size={120} strokeWidth={10}/>
           <p>You have <span className='text-cyan font-bold text-center'>{TotalCorrect}/{questions.length}</span> Correct answers</p>
+          <button
+          onClick={()=>{
+            setCurrentQuestion(-1)
+          }}
+          className="bg-cyan-500 px-4 py-2 mx-auto my-2 text-white rounded-lg w-full block cursor-pointer"
+        >
+          Restart Quiz
+        </button>
         </div>
       )
     }
