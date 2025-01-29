@@ -54,7 +54,7 @@ const App = () => {
 
   const SelectedAnswer = (id) => {
     setSelectedAnswerId(id);
-  };
+  } ;
 
   if (CurrentQuestion !== -1) {
     if (CurrentQuestion === questions.length - 1) {
